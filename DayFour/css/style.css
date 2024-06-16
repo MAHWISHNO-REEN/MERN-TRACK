@@ -1,0 +1,216 @@
+body{
+	
+
+	margin: 0px;
+	font-style: italic;
+	font: normal 16px arial sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+	background-color: #f4f4f4;
+	user-select: none;
+}
+
+a{
+	text-decoration: none;
+	color: darkblue;
+	
+}
+
+a:hover{
+	color: red;
+
+}
+
+a:active{
+	color: green;
+}
+
+/*a:visited{
+	color: black;
+}*/
+
+.clr{
+	clear: both;
+}
+
+.container{
+	margin:auto;
+	width: 80%; 
+}
+
+.button{
+	padding: 20px 15px;
+	background-color: black;
+	color: white;
+	max-width: 200px;
+	border-radius: 5px;
+	transition: background 0.2s;
+}
+
+.button:hover{
+	background: red;
+	color: white;
+}
+
+.box-1{
+
+	padding: 20px;
+	border: 5px red solid;
+	margin: 20px 0;
+	border-radius: 5px;
+
+	background: black;
+	color: white;
+
+}
+
+.box-1 h1{
+	font-family: tahoma;
+	letter-spacing: 0.2em;
+	word-spacing: 1em;
+	font-style: italic;
+
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+
+
+.box-2{
+	border: 5px dotted blue;
+	padding: 20px ;
+	box-shadow: 10px 10px 10px;
+	margin: 20px 0;
+
+}
+
+.categories{
+	border: 1px red solid;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.categories h2{
+	text-align: center;
+	font-size: 2em;
+}
+
+.categories ul{
+	padding: 0;
+	list-style: square;
+	list-style: none;
+}
+
+.categories li{
+	padding-bottom: 5px;
+	border-bottom: dotted 1px #333;
+	list-style-image: url('./images/tick.png');
+}
+
+.my-form{
+	padding: 20px;
+	
+}
+
+.my-form .form-group{
+	padding-bottom: 15px;
+	
+
+}
+
+.my-form label{
+	font-weight: bold;
+	display:inline-block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+	padding: 8px;
+	width:100%;
+}
+
+.block{
+	float: left;
+	width: 30%;
+	border: 1px solid darkred;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 10px 0;
+
+}
+
+#main-block p{
+	overflow-y: hidden;
+}
+
+#main-block{
+	float: left;
+	width: 70%;
+
+}
+
+#sidebar{
+	float: right;
+	width: 30%;
+	padding: 15px;
+	background: black;
+	color: white;
+	box-sizing: border-box;
+	
+}
+
+.p-box{
+	width: 800px;
+	height: 500px;
+	border: 1px red solid;
+	margin-top: 30px;
+	position: relative;
+	background-image: url('./images/light.png');
+	background-repeat: no-repeat;
+	background-position: 100px 200px;
+	background-position: center top;
+	background-size: cover;
+	cursor: zoom-in;
+/*	object-fit: cover;*/
+
+}
+
+.p-box h1{
+	position: absolute;
+	top: 60px;
+	left: 50px;
+
+}
+
+.p-box h2{
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+
+}
+
+.fix-me{
+	position: fixed;
+	top: 300px;
+	font-size: 1.5em;
+	
+}
+
+
+.list li:first-child{
+	background-color: red;
+}
+.list li:nth-child(3){
+	background-color: lightgreen;
+}
+
+.list li:last-child{
+	background-color: blue;
+}
+
+.list li:nth-child(even){
+	background-color: lightblue;
+}
+
+
+
+
