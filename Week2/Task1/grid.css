@@ -1,0 +1,106 @@
+
+body{
+	font-style: Arial sans-serif;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 1em;
+}
+
+.container{
+	background-image:url('./images/showcase.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 2em;
+}
+
+.container p {
+  font-size: 1.4em;
+  color: white;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.facts-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap:1em;
+	padding: 2em;
+	grid-template-areas:
+	"facts facts facts" 
+	 "fact1 fact1 fact1"
+	 "fact2 fact2 fact3"
+	 "fact4 fact5 fact5 "
+	
+
+}
+
+.fact-item{
+	background-color: white;
+	border: 20px;
+	border-radius: 6px;
+	color: blue;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0px 0px 10px;
+}
+
+.fact-item p{
+	color: black;
+}
+
+.fact-item img{
+	max-width: 100%;
+	border-radius: 6px;
+	height: auto;
+}
+
+.fact-item h2{
+
+	margin: 0.5em 0;
+
+}
+
+.fact-item:nth-of-type(1){
+	grid-area: fact1;
+}
+
+.fact-item:nth-of-type(2) {
+  grid-area: fact2;
+}
+
+.fact-item:nth-of-type(3) {
+  grid-area: fact3;
+}
+
+.fact-item:nth-of-type(4) {
+  grid-area: fact4;
+}
+
+.fact-item:nth-of-type(5) {
+  grid-area: fact5;
+}
+
+
+@media (max-width: 600px) {
+  .facts-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "facts"
+      "fact1"
+      "fact2"
+      "fact3"
+      "fact4"
+      "fact5";
+  }
+}
+
+

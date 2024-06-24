@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+  background-image: url('./images/showcase.jpg') ;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  padding: 40px;
+  line-height: 2em;
+
+}
+.banner a{
+  border: 50px;
+  border-radius: 3px;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.banner a:hover{
+  background-color: black;
+}
+
+.img-banner{
+  width: 100%;
+}
+
+.img-info{
+  width: 100%;
+
+}
+
+.img-info h2{
+  padding: 30px;
+  font-family: arial;
+  font-size: 50px;
+  color: black;
+  line-height: 45px;
+}
+
+.img-info p{
+  padding: 0px 30px 30px;
+  font-family: arial;
+  font-size: 15px;
+  color: black;
+  line-height: 20px;
+}
+
+.img-book{
+  width: 100%;
+}
+
+@media only screen and (min-width:800px){
+  .img-banner{
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+
+  }
+  .wrapper{
+     width: 600px;
+     margin: 0 auto;
+  }
+
+  .img-info h2{
+    padding: 20px 0px 0px;
+ 
+  }
+
+  .img-info p{
+    padding: 20px 0px 0px;
+  
+  }
+
+  .img-book{
+    padding-top: 30px;
+  }
+
+}
+
+@media only screen and (min-width:1000px){
+  .wrapper{
+    width: 1000px;
+  }
+
+  .img-info{
+    width: 50%;
+    float: right;
+  }
+
+  .img-book{
+    padding-top: 0px;
+    width: 50%;
+    float: left;
+  }
+
+    .img-info h2{
+    padding: 20px 0px 0px 30px ;
+ 
+  }
+
+  .img-info p{
+    padding: 20px 0px 0px 30px;
+  
+  }
+
+}
